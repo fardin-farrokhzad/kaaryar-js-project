@@ -105,7 +105,7 @@ nav {
   color: var(--mustard);
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 880px) {
   .main-header {
     padding: 30px 40px;
     flex-direction: column;
@@ -140,7 +140,6 @@ nav {
     background: var(--red-theme);
     width: 100%;
     text-align: left;
-
     background-color: #ffffff;
   }
   .nav-links.active {

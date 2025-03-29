@@ -16,6 +16,7 @@ body {
 }
 
 .hero-section {
+  display: none;
   width: 100%;
   height: 641px;
   background-image: url("https://avada.website/country-butcher/wp-content/uploads/sites/154/2021/03/home-hero-background-new-scaled.jpg");
@@ -63,7 +64,42 @@ body {
   background-color: #ffffff;
   text-decoration: none;
   transition: 200ms ease;
+  font-weight: 600;
 }
 .hero-content a:hover {
   background-color: var(--mustard);
+}
+.hero-triple-btn {
+  padding: 0px 40px 20px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  text-align: center;
+  align-items: flex-start;
+}
+.hero-triple-btn a {
+  color: var(--lighter-dark-texts);
+  background-color: #faf9f7;
+  text-decoration: none;
+  font-size: 13px;
+  display: inline-flex;
+  gap: 10px;
+  padding: 30px 2rem;
+  border: 1px solid #0000001f;
+  position: relative;
+  z-index: 2;
+  margin-top: -38.5px;
+}
+@media only screen and (max-width: 880px) {
+  .hero-triple-btn {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 30px;
+  }
+  .hero-triple-btn a {
+    justify-content: center;
+    max-height: 77px;
+    margin-bottom: 35px;
+  }
 }
