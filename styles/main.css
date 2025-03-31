@@ -64,7 +64,7 @@ body {
   padding: 18px 30px;
   background-color: #ffffff;
   text-decoration: none;
-  transition: 200ms ease;
+  transition: 300ms ease;
   font-weight: 600;
 }
 .hero-content a:hover {
@@ -205,12 +205,115 @@ body {
 }
 
 .main-order .item2 {
-  max-height: 427px;
+  max-height: 26.6rem;
   width: auto;
   position: relative;
   left: -4rem;
 }
 
+.main-popular {
+  border-top: 7px solid #ffffff;
+  padding: 90px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  width: 100%;
+  text-align: center;
+  background: url("https://avada.website/country-butcher/wp-content/uploads/sites/154/2021/01/featured-products-background-scaled.jpg");
+}
+.main-popular .texts {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.main-popular .texts span {
+  font-weight: 550;
+  padding: 5px 0px;
+}
+.main-popular .texts strong {
+  font-size: 3em;
+  font-family: "Times New Roman", Times, serif;
+  padding: 5px 0px;
+  font-weight: 550;
+}
+.main-popular .texts p {
+  max-width: 50rem;
+  line-height: 1.5em;
+  padding: 5px 0px;
+  color: var(--lighter-dark-texts);
+}
+.main-popular .products {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+.main-popular .products > * {
+  padding: 10px 10px 30px;
+  max-width: 23rem;
+  max-height: 29rem;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  border: 7px solid var(--mustard);
+}
+.main-popular .products > * img {
+  max-width: 20rem;
+  height: auto;
+}
+.main-popular .products > * .text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.main-popular .products > * .text a {
+  text-decoration: none;
+  font-size: 1.8em;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 600;
+  transition: 0.3s ease;
+  color: #000000;
+}
+.main-popular .products > * .text a:hover {
+  color: var(--red-theme);
+}
+.main-popular .products > * .text span {
+  color: var(--red-theme);
+}
+.main-popular .products .item2 .text div {
+  display: inline-flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.main-popular .products .item2 .text div .last-price {
+  text-decoration: line-through;
+  color: var(--lighter-dark-texts);
+}
+.main-popular .products .item2 .text div .price-off {
+  padding: 3px;
+  border: 1px solid var(--red-theme);
+}
+.main-popular .products .item2 .text div .message {
+  color: #000000;
+}
+.main-popular .btn a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 500;
+  padding: 20px 30px;
+  background-color: var(--mustard);
+  transition: 0.5s ease;
+}
+.main-popular .btn a:hover {
+  background-color: var(--red-theme);
+  color: #ffffff;
+}
 @media only screen and (max-width: 880px) {
   .hero-triple-btn {
     flex-direction: column;
@@ -225,6 +328,7 @@ body {
   }
   .main-introduction {
     flex-direction: column;
+    padding-bottom: 10px;
   }
   .main-introduction .item2 {
     text-align: center;
@@ -233,11 +337,17 @@ body {
   .main-introduction .item2 a {
     justify-content: center;
   }
+  .main-order {
+    padding-bottom: 90px;
+  }
   .main-order .item2 {
     display: none;
   }
   .main-order .item1 {
     text-align: center;
     position: static;
+  }
+  .main-order .item1 a {
+    justify-content: center;
   }
 }

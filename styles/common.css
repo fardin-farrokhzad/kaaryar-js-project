@@ -94,12 +94,14 @@ nav {
   margin: 0 15px;
   padding: 20px;
   cursor: pointer;
+  transition: 0.3s ease;
 }
 .nav-links a {
   color: #ffffff;
   text-decoration: none;
   font-size: 0.9em;
   font-weight: bold;
+  transition: 0.3s ease;
 }
 .nav-links li:hover a {
   color: var(--mustard);
