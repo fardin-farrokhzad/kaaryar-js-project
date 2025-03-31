@@ -256,20 +256,20 @@ body {
 .main-popular .products > * {
   padding: 10px 10px 30px;
   max-width: 23rem;
-  max-height: 29rem;
+  height: 32rem;
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 20px;
   border: 7px solid var(--mustard);
 }
 .main-popular .products > * img {
-  max-width: 20rem;
-  height: auto;
+  width: 20rem;
+  height: 20rem;
 }
 .main-popular .products > * .text {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 25px;
 }
 .main-popular .products > * .text a {
   text-decoration: none;
@@ -285,11 +285,27 @@ body {
 .main-popular .products > * .text span {
   color: var(--red-theme);
 }
+.main-popular .products .item2 {
+  position: relative;
+}
+.main-popular .products .item2 .text {
+  position: relative;
+  bottom: 5px;
+}
 .main-popular .products .item2 .text div {
   display: inline-flex;
   gap: 10px;
   justify-content: center;
   align-items: center;
+}
+.main-popular .products .item2 .on-sale {
+  position: absolute;
+  background-color: var(--mustard);
+  width: 94.15%;
+  padding: 8px;
+}
+.main-popular .products .item2 .on-sale span {
+  font-size: 14px;
 }
 .main-popular .products .item2 .text div .last-price {
   text-decoration: line-through;
