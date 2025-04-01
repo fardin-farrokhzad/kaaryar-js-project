@@ -66,6 +66,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 .sticky {
   position: fixed;

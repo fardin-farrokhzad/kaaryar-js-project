@@ -1,0 +1,57 @@
+.t2b.animated.show {
+  animation: t2b 1.5s forwards;
+  animation-iteration-count: 1;
+}
+.b2t.animated.show {
+  animation: b2t 1.5s forwards;
+  animation-iteration-count: 1;
+}
+.r2l.animated.show {
+  animation: r2l 1.5s forwards;
+  animation-iteration-count: 1;
+}
+.l2r.animated.show {
+  animation: l2r 1.5s forwards;
+  animation-iteration-count: 1;
+}
+
+@keyframes t2b {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes b2t {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes r2l {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes l2r {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

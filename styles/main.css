@@ -20,7 +20,9 @@ body {
   display: none;
   width: 100%;
   height: 641px;
-  background-image: url("https://avada.website/country-butcher/wp-content/uploads/sites/154/2021/03/home-hero-background-new-scaled.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://avada.website/country-butcher/wp-content/uploads/sites/154/2021/03/home-hero-background-new-scaled.jpg");
+
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -30,19 +32,8 @@ body {
   color: #ffffff;
   position: relative;
 }
-.hero::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 1;
-}
 .hero * {
   position: relative;
-  z-index: 2;
 }
 .hero-content {
   display: flex;
@@ -88,7 +79,7 @@ body {
   padding: 30px 2rem;
   border: 1px solid #0000001f;
   position: relative;
-  z-index: 2;
+
   margin-top: -38.5px;
 }
 
@@ -222,6 +213,9 @@ body {
   width: 100%;
   text-align: center;
   background: url("https://avada.website/country-butcher/wp-content/uploads/sites/154/2021/01/featured-products-background-scaled.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .main-popular .texts {
   display: flex;
@@ -254,6 +248,7 @@ body {
   margin: 15px;
 }
 .main-popular .products > * {
+  opacity: 0;
   padding: 10px 10px 30px;
   max-width: 23rem;
   min-height: 30rem;
