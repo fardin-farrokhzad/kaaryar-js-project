@@ -141,7 +141,7 @@ body {
   height: 194px;
   background-image: url("/assets/grass.svg");
   background-repeat: repeat-x;
-  background-size: contain;
+  background-size: cover;
 }
 .main-order {
   background-color: var(--grass);

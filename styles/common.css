@@ -22,7 +22,7 @@ body {
   height: auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
 }
 .header-social-section {
