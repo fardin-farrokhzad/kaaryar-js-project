@@ -16,6 +16,9 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   scroll-behavior: smooth;
 }
+.main {
+  width: 100%;
+}
 .hero {
   width: 100%;
   height: 251px;
@@ -30,7 +33,204 @@ body {
 .hero .hero-content {
   text-align: center;
   color: #ffffff;
-  font-size: 54px;
+  font-size: 3.7rem;
   font-family: "Times New Roman", Times, serif;
   font-weight: bold;
+}
+.heritage {
+  width: 100%;
+  padding: 90px 30px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.heritage .wrapper1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 40px;
+  max-width: 58rem;
+}
+
+.heritage .wrapper1 > span {
+  font-size: 1.1rem;
+  font-weight: 550;
+  color: var(--lighter-dark-texts);
+}
+
+.heritage .wrapper1 > strong {
+  font-size: 3.7rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.heritage .wrapper1 > p {
+  line-height: 1.5rem;
+  color: var(--lighter-dark-texts);
+}
+
+.heritage .wrapper2 {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.heritage .wrapper2 > div {
+  height: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5rem;
+  flex: 1 1 300px;
+  max-width: 100%;
+  gap: 50px;
+}
+.heritage .wrapper2 > div > strong {
+  font-size: 2rem;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 500;
+}
+.heritage .wrapper2 > div > p {
+  color: var(--lighter-dark-texts);
+}
+
+.heritage .wrapper2 .image-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block; /* Remove any default spacing */
+}
+
+.main-popular {
+  border-top: 7px solid #ffffff;
+  padding: 90px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  width: 100%;
+  text-align: center;
+  background: url("https://avada.website/country-butcher/wp-content/uploads/sites/154/2021/01/featured-products-background-scaled.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.main-popular .texts {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.main-popular .texts span {
+  font-weight: 550;
+  padding: 5px 0px;
+}
+.main-popular .texts strong {
+  font-size: 3em;
+  font-family: "Times New Roman", Times, serif;
+  padding: 5px 0px;
+  font-weight: 550;
+}
+.main-popular .texts p {
+  max-width: 50rem;
+  line-height: 1.5em;
+  padding: 5px 0px;
+  color: var(--lighter-dark-texts);
+}
+.main-popular .products {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+.main-popular .products > * {
+  opacity: 0;
+  padding: 10px 10px 30px;
+  max-width: 23rem;
+  min-height: 30rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 7px solid var(--mustard);
+}
+.main-popular .products > * img {
+  max-width: 20rem;
+  max-height: 20rem;
+}
+.main-popular .products > * .text {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.main-popular .products > * .text a {
+  text-decoration: none;
+  font-size: 1.8em;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 600;
+  transition: 0.3s ease;
+  color: #000000;
+}
+.main-popular .products > * .text a:hover {
+  color: var(--red-theme);
+}
+.main-popular .products > * .text span {
+  color: var(--red-theme);
+}
+.main-popular .products .item2 {
+  position: relative;
+}
+.main-popular .products .item2 .text {
+  position: relative;
+  bottom: 5px;
+}
+.main-popular .products .item2 .text div {
+  display: inline-flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.main-popular .products .item2 .on-sale {
+  position: absolute;
+  background-color: var(--mustard);
+  width: 94.15%;
+  padding: 8px;
+}
+.main-popular .products .item2 .on-sale span {
+  font-size: 14px;
+}
+.main-popular .products .item2 .text div .last-price {
+  text-decoration: line-through;
+  color: var(--lighter-dark-texts);
+}
+.main-popular .products .item2 .text div .price-off {
+  padding: 3px;
+  border: 1px solid var(--red-theme);
+}
+.main-popular .products .item2 .text div .message {
+  color: #000000;
+}
+.main-popular .btn a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 20px 30px;
+  background-color: var(--mustard);
+  transition: 0.5s ease;
+}
+.main-popular .btn a:hover {
+  background-color: var(--red-theme);
+  color: #ffffff;
+}
+@media only screen and (max-width: 880px) {
 }
