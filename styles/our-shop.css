@@ -1,0 +1,21 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --red-theme: #a8343c;
+  --lighter-dark-texts: #544e4c;
+  --mustard: #e1cda0;
+  --grass: #f3f1ec;
+}
+body {
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+.main {
+  width: 100%;
+}
