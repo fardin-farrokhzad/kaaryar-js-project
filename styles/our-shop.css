@@ -68,6 +68,7 @@ body {
   font-size: 3.5rem;
   font-family: "Times New Roman", Times, serif;
   font-weight: 540;
+  line-height: 4rem;
 }
 
 .hero .hero-text-wrapper > p {
@@ -75,7 +76,92 @@ body {
   line-height: 1.5rem;
   color: var(--lighter-dark-texts);
 }
+.finest-meat {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 70px;
+}
+.finest-meat .finest-meat-wrapper {
+  max-width: 78rem;
+  display: flex;
 
+  flex-wrap: wrap;
+  padding: 0 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.finest-meat .item {
+  margin: 20px;
+  max-width: 21rem;
+}
+.finest-meat .item .img-link {
+  text-decoration: none;
+}
+.finest-meat .item .img-link img {
+  max-width: 100%;
+  border-radius: 2px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.finest-meat .item1 img {
+  position: relative;
+}
+.finest-meat .item1 .img-link::before {
+  content: "Out of stock";
+  width: 100%;
+  padding: 5px;
+  background-color: var(--mustard);
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  z-index: 1;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+.finest-meat .item1 .img-link::after {
+  content: "On Sale !";
+  padding: 20px;
+  background-color: var(--red-theme);
+  color: #ffffff;
+  left: 1rem;
+  top: 2.3rem;
+  position: absolute;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.856) 0px 3px 8px;
+}
+.finest-meat .item1 .text-wrapper .first-price {
+  text-decoration: line-through;
+  color: var(--lighter-dark-texts);
+}
+.finest-meat .item .text-wrapper {
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.finest-meat .item .text-wrapper a {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2rem;
+  font-weight: 550;
+  color: #000000;
+  text-decoration: none;
+  font-style: italic;
+  transition: 0.5s ease;
+}
+.finest-meat .item .text-wrapper a:hover {
+  color: var(--red-theme);
+}
+.finest-meat .item .text-wrapper .price-wrapper {
+  color: var(--red-theme);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
 @media only screen and (max-width: 880px) {
   .hero-triple-btn {
     flex-direction: column;
