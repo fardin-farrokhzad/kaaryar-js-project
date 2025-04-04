@@ -93,6 +93,46 @@ body {
   border-radius: 25px;
   box-shadow: 0px 20px 25px 0px hsla(17, 14%, calc(10% - 7%), calc(100% - 72%));
 }
+.about-heritage {
+  width: 100%;
+  padding: 0 30px 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 90px;
+}
+.about-heritage .text-wrapper {
+  display: flex;
+  max-width: 59rem;
+  gap: 40px;
+}
+.about-heritage .text-wrapper p {
+  text-align: left;
+  color: var(--lighter-dark-texts);
+  line-height: 2rem;
+  font-size: 1.1rem;
+}
+.about-heritage .btn-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-heritage .btn-wrapper a {
+  text-align: center;
+  line-height: 1.5rem;
+  text-decoration: none;
+  background-color: var(--mustard);
+  font-size: 1.3rem;
+  color: #000000;
+  padding: 20px 3vw;
+  transition: 0.5s ease;
+}
+.about-heritage .btn-wrapper a:hover {
+  color: #ffffff;
+  background-color: var(--red-theme);
+}
 .main-popular {
   border-top: 7px solid #ffffff;
   padding: 90px 30px;
