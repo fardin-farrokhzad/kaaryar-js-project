@@ -19,3 +19,73 @@ body {
 .main {
   width: 100%;
 }
+.hero {
+  margin: 60px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.hero-triple-btn {
+  padding: 0px 40px 20px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  text-align: center;
+  align-items: flex-start;
+}
+.hero-triple-btn a {
+  color: var(--lighter-dark-texts);
+  background-color: #faf9f7;
+  text-decoration: none;
+  font-size: 13px;
+  display: inline-flex;
+  gap: 10px;
+  padding: 30px 2rem;
+  border: 1px solid #0000001f;
+}
+.hero .hero-text-wrapper {
+  margin: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  flex-direction: column;
+  max-width: 56rem;
+  line-height: 1.5rem;
+}
+.hero .hero-text-wrapper > span {
+  padding: 20px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--lighter-dark-texts);
+}
+
+.hero .hero-text-wrapper > strong {
+  padding: 20px;
+  font-size: 3.5rem;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 540;
+}
+
+.hero .hero-text-wrapper > p {
+  padding: 20px;
+  line-height: 1.5rem;
+  color: var(--lighter-dark-texts);
+}
+
+@media only screen and (max-width: 880px) {
+  .hero-triple-btn {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 30px;
+  }
+  .hero-triple-btn a {
+    justify-content: center;
+    max-height: 77px;
+    margin-bottom: 35px;
+  }
+}
