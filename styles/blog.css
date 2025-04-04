@@ -1,0 +1,147 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --red-theme: #a8343c;
+  --lighter-dark-texts: #544e4c;
+  --mustard: #e1cda0;
+  --grass: #f3f1ec;
+}
+body {
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+.main {
+  width: 100%;
+}
+.hero {
+  width: 100%;
+  height: 15.688rem;
+  padding: 80px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://avada.website/country-butcher/wp-content/uploads/sites/154/2021/01/newsletter-background-image-scaled.jpg");
+  background-size: cover;
+  background-repeat: repeat-x;
+}
+.hero .hero-content {
+  text-align: center;
+  color: #ffffff;
+  font-size: 3.7rem;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+.article {
+  width: 100%;
+  padding: 90px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 80px;
+}
+.article .text-wrapper {
+  margin: 20px 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 40px;
+  max-width: 58rem;
+}
+
+.article .text-wrapper > span {
+  font-size: 1.1rem;
+  font-weight: 550;
+  color: var(--lighter-dark-texts);
+}
+
+.article .text-wrapper > strong {
+  font-size: 3.7rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.article .text-wrapper > p {
+  line-height: 1.5rem;
+  color: var(--lighter-dark-texts);
+}
+.article .items-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 10px;
+  max-width: 78rem;
+}
+.article .item {
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 23rem;
+  height: 48rem;
+  opacity: 0.75;
+  transition: 0.5s ease;
+}
+.article .item:hover {
+  opacity: 1;
+}
+.article .item .image-wrapper {
+  width: 100%;
+}
+
+.article .item .image-wrapper img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.article .item .title {
+  text-decoration: none;
+  font-size: 2.1rem;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 600;
+  color: #000000;
+  transition: 0.5s ease;
+}
+.article .item .title:hover {
+  color: var(--red-theme);
+}
+.article .item .info {
+  padding: 10px 0;
+  border: 1px solid var(--lighter-dark-texts);
+  border-left: none;
+  border-right: none;
+}
+.article .item .info span {
+  padding: 5px;
+  font-size: 0.8rem;
+  color: var(--lighter-dark-texts);
+}
+.article .item p {
+  color: var(--lighter-dark-texts);
+  line-height: 1.5rem;
+}
+.article .item .read-more {
+  text-decoration: none;
+  padding: 1.25rem;
+  background-color: var(--mustard);
+  max-width: 9.75rem;
+  transition: 0.5s ease;
+  color: #000000;
+}
+.article .item .read-more:hover {
+  color: #ffffff;
+  background-color: var(--red-theme);
+}
