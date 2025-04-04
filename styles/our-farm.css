@@ -95,7 +95,7 @@ body {
 }
 .about-heritage {
   width: 100%;
-  padding: 0 30px 90px;
+  padding: 0 30px 140px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -124,7 +124,7 @@ body {
   line-height: 1.5rem;
   text-decoration: none;
   background-color: var(--mustard);
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: #000000;
   padding: 20px 3vw;
   transition: 0.5s ease;
@@ -132,6 +132,81 @@ body {
 .about-heritage .btn-wrapper a:hover {
   color: #ffffff;
   background-color: var(--red-theme);
+}
+.animals {
+  height: auto;
+  padding: 10px 50px 90px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.animals .animals-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+/* 17.875 */
+.animals .animals-wrapper .item {
+  padding: 20px;
+  max-width: 23rem;
+  min-width: 13rem;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  border: 6px solid var(--mustard);
+}
+.animals .animals-wrapper .item .image-wrapper {
+  width: 100%;
+}
+.animals .animals-wrapper .item .image-wrapper img {
+  width: 100%;
+}
+.animals .animals-wrapper .item > span {
+  font-size: 2rem;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 600;
+}
+.animals .animals-wrapper .item > ul {
+  padding: 10px;
+  list-style: none;
+}
+.animals .animals-wrapper .item > ul li {
+  padding: 10px 0;
+}
+.animals .animals-wrapper .item1 ul li::before {
+  font-family: "Font Awesome 6 free";
+  content: "\f188";
+  font-weight: 900;
+  margin-right: 10px;
+  color: var(--red-theme);
+}
+.animals .animals-wrapper .item2 ul li::before {
+  font-family: "Font Awesome 6 free";
+  content: "\f8c0";
+  font-weight: 900;
+  margin-right: 10px;
+  color: var(--red-theme);
+}
+.animals .animals-wrapper .item3 ul li::before {
+  font-family: "Font Awesome 6 free";
+  content: "\f6d7";
+  font-weight: 900;
+  margin-right: 10px;
+  color: var(--red-theme);
+}
+.animals .animals-wrapper .item4 ul li::before {
+  font-family: "Font Awesome 6 free";
+  content: "\f80f";
+  font-weight: 900;
+  margin-right: 10px;
+  color: var(--red-theme);
+}
+.animals .animals-wrapper .item1,
+.animals .animals-wrapper .item3 {
+  margin-top: 100px;
 }
 .main-popular {
   border-top: 7px solid #ffffff;
@@ -272,6 +347,11 @@ body {
 .main-popular .btn a:hover {
   background-color: var(--red-theme);
   color: #ffffff;
+}
+@media only screen and (max-width: 833px) {
+  .animals .animals-wrapper .item {
+    margin: 0;
+  }
 }
 @media only screen and (max-width: 833px) {
   .main-popular .products .item {
