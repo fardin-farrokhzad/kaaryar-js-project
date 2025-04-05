@@ -37,3 +37,99 @@ body {
   font-family: "Times New Roman", Times, serif;
   font-weight: bold;
 }
+.content {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 90px 30px;
+}
+.content .contact-us {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 58rem;
+}
+.content .contact-us .text-wrapper {
+  margin: 20px 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  gap: 2.5rem;
+  max-width: 58rem;
+}
+
+.content .contact-us .text-wrapper > span {
+  font-size: 1.1rem;
+  font-weight: 550;
+  color: var(--lighter-dark-texts);
+}
+
+.content .contact-us .text-wrapper > strong {
+  font-size: 3.7rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.content .contact-us .text-wrapper > p {
+  line-height: 1.5rem;
+  color: var(--lighter-dark-texts);
+}
+.content .contact-us form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.content .contact-us form .form-control {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+}
+.content .contact-us form .form-control div {
+  height: 100rem;
+  padding: 20px;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 100%;
+  width: 100%;
+}
+.content .contact-us form .form-control div input {
+  padding: 1rem;
+}
+.content .contact-us form .form-control div textarea {
+  padding: 1rem;
+}
+.content .contact-us form .form-control div input:focus,
+.content .contact-us form .form-control div textarea:focus {
+  border: none;
+  transition: 0.5s ease;
+  outline: none;
+}
+.content .contact-us form .form-control div input:focus,
+.content .contact-us form .form-control div textarea:focus {
+  border: 2px solid var(--red-theme);
+}
+.content .contact-us form .form-control div input:hover,
+.content .contact-us form .form-control div textarea:hover {
+  border: 2px solid #a8343c5b;
+}
+#submit {
+  border: none;
+  font-size: 1.2rem;
+  text-align: center;
+  background-color: var(--mustard);
+  transition: 0.5s ease;
+  margin: 1rem 0;
+}
+#submit:hover {
+  border: none;
+  color: #ffffff;
+  background-color: var(--red-theme);
+}
+@media only screen and (max-width: 600px) {
+  .content .contact-us form .form-control {
+    flex-direction: column;
+  }
+}
