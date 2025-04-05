@@ -40,8 +40,10 @@ body {
 .content {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 4rem;
   padding: 90px 30px;
+  flex-wrap: wrap;
 }
 .content .contact-us {
   display: flex;
