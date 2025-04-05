@@ -168,6 +168,74 @@ body {
 .content .contact-info .text-wrapper div i {
   color: var(--red-theme);
 }
+.content .contact-info .read-more {
+  display: flex;
+  flex-direction: column;
+  min-width: 25rem;
+  min-height: 43rem;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  background-image: url("https://avada.website/country-butcher/wp-content/uploads/sites/154/2021/01/newsletter-background-image-scaled.jpg");
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  color: #ffffff;
+  gap: 1rem;
+}
+.content .contact-info .read-more .texts {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 40px 20px;
+}
+.content .contact-info .read-more .texts > span {
+  font-size: 1.1rem;
+  font-weight: 550;
+  color: #d1d1d1;
+}
+
+.content .contact-info .read-more .texts > strong {
+  font-size: 3.7rem;
+  font-family: "Times New Roman", Times, serif;
+  padding: 10px 0;
+}
+.content .contact-info .read-more .items-wrapper {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: 0.5s ease;
+}
+.content .contact-info .read-more .items-wrapper h3 {
+  padding: 10px;
+  margin: 2rem;
+}
+.content .contact-info .read-more .items-wrapper a {
+  padding: 1.3rem;
+  margin: 25px;
+  background-color: var(--mustard);
+  color: #000000;
+  text-decoration: none;
+  font-weight: 550;
+  transition: 0.5s ease;
+}
+.content .contact-info .read-more .items-wrapper a:hover {
+  color: #ffffff;
+  background-color: var(--red-theme);
+}
+.content .contact-info .read-more .items-wrapper .image-wrapper {
+  margin: 20px;
+}
+.content .contact-info .read-more .items-wrapper .image-wrapper img {
+  width: 100%;
+  border-radius: 10px;
+}
 @media only screen and (max-width: 600px) {
   .content .contact-us form .form-control {
     flex-direction: column;
