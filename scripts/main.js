@@ -11,7 +11,7 @@ window.addEventListener("scroll", () => {
 });
 
 // Mobile Menu Toggle
-const menuToggle = document.querySelector(".menu-toggle");
+const menuToggle = document.querySelector("#toggle");
 const navLinks = document.querySelector(".nav-links");
 
 menuToggle.addEventListener("click", () => {
@@ -19,7 +19,7 @@ menuToggle.addEventListener("click", () => {
 });
 
 const animated = document.querySelectorAll(".animated");
-/* Observer to detect when an element enters the viewport */
+// Observer to detect when an element enters the viewport
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
@@ -28,5 +28,16 @@ const observer = new IntersectionObserver((entries) => {
   });
 });
 
-/* Observe each element */
+//  Observe each element
 animated.forEach((element) => observer.observe(element));
+
+// navlinks color toggle
+const links = document.querySelectorAll(".nav-links > li > a");
+const linkPage = location.href;
+
+links.forEach((link) => {
+  if (linkPage.includes(link.dataset.href)) {
+    link.classList.add("activate-color");
+    console.log("we're in");
+  }
+});

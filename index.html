@@ -41,14 +41,25 @@
       </div>
     </header>
     <nav class="navbar" id="navbar">
-      <button class="menu-toggle"><i class="fa-solid fa-bars"></i></button>
+      <input type="checkbox" id="toggle" />
+      <label for="toggle" id="label-toggle">
+        <span class="line line1"></span>
+        <span class="line line2"></span>
+        <span class="line line3"></span>
+      </label>
       <ul class="nav-links b2t animated">
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="pages/our-heritage.html">OUR HERITAGE</a></li>
-        <li><a href="pages/our-shop.html">OUR SHOP</a></li>
-        <li><a href="pages/our-farm.html">OUR FARM</a></li>
-        <li><a href="pages/blog.html">BLOG</a></li>
-        <li><a href="pages/contact-us.html">CONTACT US</a></li>
+        <li><a href="index.html" data-href="index">HOME</a></li>
+        <li>
+          <a href="pages/our-heritage.html" data-href="our-heritage"
+            >OUR HERITAGE</a
+          >
+        </li>
+        <li><a href="pages/our-shop.html" data-href="our-shop">OUR SHOP</a></li>
+        <li><a href="pages/our-farm.html" data-href="our-farm">OUR FARM</a></li>
+        <li><a href="pages/blog.html" data-href="blog">BLOG</a></li>
+        <li>
+          <a href="pages/contact-us.html" data-href="contact-us">CONTACT US</a>
+        </li>
       </ul>
     </nav>
     <main class="main-hero">
